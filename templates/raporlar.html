@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raporlar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .report-wrapper {
+            margin-top: 40px;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        .btn-custom {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="text-center mt-4">
+        <h2>📊 Personel Raporları</h2>
+        <p class="text-muted">Yönetim Paneli - Raporlar</p>
+    </div>
+
+    <div class="report-wrapper mt-4">
+        <h4>Çalışan Maaş Ortalaması</h4>
+        <div class="mb-3">
+            <table class="table table-striped">
+                <thead class="table-dark">
+                    <tr>
+                        <th>#</th>
+                        <th>Ad</th>
+                        <th>Soyad</th>
+                        <th>Pozisyon</th>
+                        <th>Maaş</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Ahmet</td>
+                        <td>Yılmaz</td>
+                        <td>Yazılım Geliştirici</td>
+                        <td>53.500 ₺</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Mehmet</td>
+                        <td>Demir</td>
+                        <td>Veri Analisti</td>
+                        <td>32.100 ₺</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Ayşe</td>
+                        <td>Çelik</td>
+                        <td>Yazılım Geliştirici</td>
+                        <td>53.500 ₺</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="alert alert-info" role="alert">
+                <strong>Ortalama Maaş:</strong> ...₺
+            </div>
+        </div>
+        <h4>Pozisyona Göre Çalışan Dağılımı</h4>
+        <p>Bu alan, çalışanların pozisyona göre dağılımını göstermektedir.</p>
+        <div class="mb-3">
+            <table class="table table-striped">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Pozisyon</th>
+                        <th>Çalışan Sayısı</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Yazılım Geliştirici</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Veri Analisti</td>
+                        <td>2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h4>İşe Başlama Tarihine Göre Çalışanlar</h4>
+        <p> Bu alan, çalışanların işe başlama tarihine göre sıralanışını göstermektedir.</p>
+        <div class="mb-3">
+            <table class="table table-striped">
+                <thead class="table-dark">
+                    <tr>
+                        <th>#</th>
+                        <th>Ad</th>
+                        <th>Soyad</th>
+                        <th>Pozisyon</th>
+                        <th>İşe Başlama Tarihi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> 1 </td>
+                        <td> Aysel </td>
+                        <td> Koç </td>
+                        <td> Veri Analisti</td>
+                        <td> 23.07.01 </td>
+                    </tr>
+                     <tr>
+                        <td>2</td>
+                        <td>Ahmet</td>
+                        <td>Yılmaz</td>
+                        <td>Yazılım Geliştirici</td>
+                        <td>2023-01-01</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Mehmet</td>
+                        <td>Demir</td>
+                        <td>Veri Analisti</td>
+                        <td>2023-03-15</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Ayşe</td>
+                        <td>Çelik</td>
+                        <td>Yazılım Geliştirici</td>
+                        <td>2023-01-01</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

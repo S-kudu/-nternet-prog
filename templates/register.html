@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <title>Kayıt Ol</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .login-wrapper {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+        <form action="/kayit" method="POST" class="mt-4">
+            <div class="container">
+                <div class="login-wrapper">
+                    <h3 class="text-center mb-4">👤 Kayıt Ol</h3>
+                    <p class="text-muted">Sisteme üye olmak için aşağıdaki bilgileri doldurun.</p>
+                    <div class="mb-3">
+                        <label for="Kullanici adi" class="form-label">Kullanıcı Adı</label>
+                        <input type="Kullanici adi" class="form-control" id="Kullanici adi" placeholder="Kullanıcı adı girin">
+                    </div>
+                        <div class="mb-3">
+                            <label for="e-mail" class="form-label">E-posta</label>
+                            <input type="e-mail" class="form-control" id="e-mail" placeholder="e-mailinizi girin">
+                        </div>
+                        <div class="mb-3">
+                            <label for="sifre" class="form-label">Şifre</label>
+                            <input type="sifre" class="form-control" id="sifre" placeholder="Şifrenizi girin">
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="sifre" class="form-label">Şifre Tekrar</label>
+                            <input type="sifre" class="form-control" id="sifre" placeholder="Şifrenizi tekrar girin">
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">Kayıt Ol</button>
+                        </div>
+                    
+                    <div class="text-center mt-3">
+                        <p>Zaten bir hesabım var! </p>
+                        <a href ="{{ url_for('login') }}">
+                            Giriş sayfasına git
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+        </form>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
